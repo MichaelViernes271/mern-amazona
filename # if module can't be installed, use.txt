@@ -1,0 +1,20 @@
+# if module can't be installed, use "--force" arg at the end.
+cd frontend
+npm i react-router-dom
+
+
+## for backend folder
+cd backend
+npm init
+
+npm install express
+
+#simple task - in launching the backend/server.js file.
+node server.js
+
+#updates the server whenver the code changes
+npm install nodemon --save-dev
+
+#in the backend/package.json file, write under the "scripts" this line of code:
+"start": "nodemon server.js",
+
