@@ -53,3 +53,7 @@ main {
 .color-white {
   color: whitesmoke;
 }
+
+.img-thumbail {
+  height: 80px;
+}

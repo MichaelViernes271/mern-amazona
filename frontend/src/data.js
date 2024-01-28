@@ -1,6 +1,7 @@
 const data = {
     products: [
         {
+            _id: '1',
             name: 'Nike Slim Shirt',
             slug: 'nike-slim-shirt',
             category: 'Shirts',
@@ -10,9 +11,10 @@ const data = {
             brand: 'Nike',
             rating: 4.5,
             numReviews: 10,
-            description: 'high quality shirt',
+            description: 'high quality cloth',
         },
         {
+            _id: '2',
             name: 'Adidas Fit Shirt',
             slug: 'adidas-fit-shirt',
             category: 'Shirts',
@@ -22,9 +24,10 @@ const data = {
             brand: 'Adidas',
             rating: 4.0,
             numReviews: 10,
-            description: 'high quality shirt',
+            description: 'high quality cloth',
         },
         {
+            _id: '3',
             name: 'Nike Slim Pant',
             slug: 'nike-slim-pant',
             category: 'Pants',
@@ -34,9 +37,10 @@ const data = {
             brand: 'Nike',
             rating: 4.5,
             numReviews: 40,
-            description: 'high quality shirt',
+            description: 'high quality cloth',
         },
         {
+            _id: '4 ',
             name: 'Adidas Fit Pant',
             slug: 'adidas-fit-pant',
             category: 'Pants',
@@ -46,7 +50,20 @@ const data = {
             brand: 'Puma',
             rating: 4.5,
             numReviews: 10,
-            description: 'high quality shirt',
+            description: 'high quality cloth',
+        },
+        {
+            _id: '5',
+            name: 'Wild Silk Cloth',
+            slug: 'wild-silk-cloth',
+            category: 'Pants',
+            image: 'images/p5.jpg',
+            price: 25,
+            countInStock: 15,
+            brand: 'Nike',
+            rating: 4.5,
+            numReviews: 40,
+            description: 'high quality cloth',
         },
     ],
 };

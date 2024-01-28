@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useContext, useEffect, useReducer } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
@@ -29,6 +29,7 @@ const reducer = (state, action) => {
 }
 
 function ProductScreen() {
+    const navigate = useNavigate();
     const params = useParams();
     const { slug } = params;
 
@@ -47,19 +48,18 @@ function ProductScreen() {
             } catch (err) {
                 dispatch({ type: 'FETCH_FAIL', payload: getError(err) });
             }
-
         };
         fetchData();
     }, [slug]);
 
     // load images when routing to the product screen details.
     // [a way around in exposing the unloaded image]
-    let image = "";
-    if (product.name === "Nike Slim Shirt") {
-        image = "http://localhost:3000/images/p1.jpg"
-    } else if (product.name === "Adidas Fit Shirt") {
-        image = "http://localhost:3000/images/p2.jpg"
-    }
+    // let image = "";
+    // if (product.name === "Nike Slim Shirt") {
+    //     image = "http://localhost:3000/images/p1.jpg"
+    // } else if (product.name === "Adidas Fit Shirt") {
+    //     image = "http://localhost:3000/images/p2.jpg"
+    // }
     //  else if (product.name === "Nike Slim Pant") {
     //     image = "http://localhost:3000/images/p3.jpg"
     // } else if (product.name === "Adidas Fit Pant") {
@@ -69,11 +69,9 @@ function ProductScreen() {
     // } else if (product.name === "Adidas Fit Pant") {
     //     image = "http://localhost:3000/images/p4.jpg"
     // } 
-    else {
+    // else {
 
-    }
-
-
+    // }
 
     const { state, dispatch: ctxDispatch } = useContext(Store);
     const { cart } = state;
@@ -89,6 +87,7 @@ function ProductScreen() {
             type: 'CART_ADD_ITEM',
             payload: { ...product, quantity },
         });
+        navigate('/cart');
     };
 
     console.log(`http://localhost:3000/${product.image}`)
@@ -100,7 +99,9 @@ function ProductScreen() {
         <div>
             <Row>
                 <Col md={6}>
-                    <img src={`${image}` || `http://localhost:3000/${product.image}` || product.image} alt={product.name} className="img-large" />
+                    <img src={`http://localhost:3000/${product.image}` || product.image}
+                        alt={product.name}
+                        className="img-large" />
                 </Col>
                 <Col md={3}>
                     <ListGroup variant="flush">
@@ -132,7 +133,7 @@ function ProductScreen() {
                                 <ListGroup.Item>
                                     <Row>
                                         <Col>Price:</Col>
-                                        <Col> $ {product.price}</Col>
+                                        <Col> PHP {product.price}</Col>
 
                                     </Row>
                                 </ListGroup.Item>
