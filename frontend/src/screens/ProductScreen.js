@@ -69,7 +69,7 @@ function ProductScreen() {
         <div>
             <Row>
                 <Col md={6}>
-                    <img src={`${image}`} alt={product.name} className="img-large" />
+                    <img src={`${image}` || product.image} alt={product.name} className="img-large" />
                 </Col>
                 <Col md={3}>
                     <ListGroup variant="flush">
@@ -77,6 +77,7 @@ function ProductScreen() {
                             <Helmet>
                                 <title> {product.name} </title>
                             </Helmet>
+                            <h1> {product.name} </h1>
                         </ListGroup.Item>
                         <ListGroup.Item>
                             <Rating
