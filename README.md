@@ -60,3 +60,15 @@
 - Define reducer
 - Create Store provider
 - Implement add to cart button click handler
+
+13. Create Cart Screen
+
+- Create 2 columns
+- Display items list
+- Create action column
+
+14. Complete Cart Screen
+
+- Click Handler for inc/dec item
+- Click Handler for remove item
+- Click Handler for checkout
