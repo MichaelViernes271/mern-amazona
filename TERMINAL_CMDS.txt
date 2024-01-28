@@ -30,3 +30,5 @@ npm install use-reducer-logger --force
 
 #installing bootstrap (you might also want a newer version of bootstrap)
 npm install react-bootstrap bootstrap@5.1.3
+
+
