@@ -53,3 +53,10 @@
 - Use spinner component
 - Create message component
 - Create utls.js to define getError function
+
+12. Implement Add to Cart
+
+- Create react context
+- Define reducer
+- Create Store provider
+- Implement add to cart button click handler

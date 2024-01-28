@@ -50,6 +50,6 @@ main {
   max-width: 100%;
 }
 
-.footer {
-  padding: 5%;
+.color-white {
+  color: whitesmoke;
 }
