@@ -46,3 +46,10 @@
 - create Rating Component
 - create Product Component
 - Use Rating Component in Product Compnent
+
+11. Create Loading and Message Component
+
+- Create loading component
+- Use spinner component
+- Create message component
+- Create utls.js to define getError function
