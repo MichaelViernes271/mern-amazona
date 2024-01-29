@@ -72,3 +72,9 @@
 - Click Handler for inc/dec item
 - Click Handler for remove item
 - Click Handler for checkout
+
+15. Create Signin Screen
+
+- Create sign in form
+- Add email and password
+- Add signin button
