@@ -33,6 +33,9 @@ export default function CartScreen() {
 
     const checkoutHandler = () => {
         // keyword to fix: resolve signin redirection makeshift solution
+        // previous code:
+        // navigate('signin?redirect=/shipping');
+
         if (true) {
             navigate('/cart/signin?redirect=signin');
         }
