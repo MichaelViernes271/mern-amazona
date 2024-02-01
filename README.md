@@ -87,5 +87,11 @@
 - Connect to mongodb database
 
 21. Seed Sample Users
+
     1. create user model
     2. seed sample users
+
+22. Create Signin Backend API
+    1. create signin api
+    2. npm install jsonwebtoken
+    3. define generateToken
