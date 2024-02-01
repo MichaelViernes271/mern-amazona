@@ -85,3 +85,7 @@
 - Install local mongodb database
 - npm intsall mongoose
 - Connect to mongodb database
+
+21. Seed Sample Users
+    1. create user model
+    2. seed sample users
