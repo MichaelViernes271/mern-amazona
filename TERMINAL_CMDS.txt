@@ -40,3 +40,7 @@ npm install mongoose
 npm install dotenv
 
 npm install bycryptjs
+
+npm install express-async-handler
+
+#GOTO ADVANCED REST CLIENT AND EITHER DOWNLOAD THE APP OR EXTENSION
