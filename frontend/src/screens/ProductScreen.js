@@ -90,7 +90,6 @@ function ProductScreen() {
         navigate('/cart');
     };
 
-    console.log(`http://localhost:3000/${product.image}`)
     return loading ? (
         <LoadingBox />
     ) : error ? (
