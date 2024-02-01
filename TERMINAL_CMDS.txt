@@ -1,3 +1,9 @@
+# =====================
+# BEST TIP
+# GO TO THE GITHUB CODE AND COMMITS BY BASIR. YOU'LL FIND MOST OF THE RESOLVED ISSUES, DISCUSSIONS, AND BUG FIXES.
+# =====================
+
+
 # if module can't be installed, use "--force" arg at the end.
 cd frontend
 npm i react-router-dom
@@ -42,5 +48,7 @@ npm install dotenv
 npm install bycryptjs
 
 npm install express-async-handler
+npm install jsonwebtoken
 
 #GOTO ADVANCED REST CLIENT AND EITHER DOWNLOAD THE APP OR EXTENSION
+#choose which operating system is best for you
