@@ -152,9 +152,29 @@
     9. create pay order api in backend
 
 31. Display Order History
+
     1. create order screen
     2. create order history api
     3. use api in the frontend
+
+32. Create Profile Screen
+
+    1. get user info from context
+    2. show user information
+    3. create user update api
+    4. update user info
+
+33.
+
+34. Add Sidebar and Search Box
+
+    1. add sidebar
+    2. add search box
+
+35. Create Search Screen
+    1. show filters
+    2. create api for searching products
+    3. display results
 
 <!-- TEST ACCOUNT FOR PAYPAL: sb-zlrsx29507478@business.example.com -->
 <!-- PASSWORD: 5Ajs}=6$ -->

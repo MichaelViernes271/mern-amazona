@@ -28,6 +28,10 @@ export default function SignupScreen() {
             toast.error('Passwords do not match');
             return;
         }
+        if (password.length < 8) {
+            toast.error('Password is less than 8 characters.');
+            return;
+        }
         try {
             const { data } = await Axios.post('/api/users/signup', {
                 name,

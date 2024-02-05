@@ -21,17 +21,12 @@ export const isAuth = (req, res, next) => {
         const token = authorization.slice(7, authorization.length); // Bearer XXXXXX
         jwt.verify(token, process.env.JWT_SECRET, (err, decode) => {
 
-            console.log(`this ${token}`)
-            // ORIGINAL CODE
             if (err) {
                 res.status(401).send({ message: 'Invalid Token ' + `${err}` });
             } else {
                 req.user = decode;
                 next();
             }
-            // escape solution just to resolve keys. remove this when another error occurs
-            // req.user = decode;
-            // next();
         });
     } else {
         res.status(401).send({ message: 'No Token' });
