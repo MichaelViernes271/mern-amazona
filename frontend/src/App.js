@@ -18,6 +18,8 @@ import ShippingAddressScreen from './screens/ShippingAddressScreen';
 import SignupScreen from './screens/SignupScreen';
 import PaymentMethodScreen from './screens/PaymentMethodScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
+import OrderScreen from './screens/OrderScreen';
+
 
 
 function App() {
@@ -81,11 +83,12 @@ function App() {
           <Container className='mt-3'>
             <Routes>
               <Route path="/signin" element={<SigninScreen />} />
+              <Route path="/signup" element={<SignupScreen />} />
               <Route path="/placeorder" element={<PlaceOrderScreen />} />
               <Route path="/cart/signin" element={<SigninScreen />} />
+              <Route path="/order/:id" element={<OrderScreen />}></Route>
               <Route path="/cart" element={<CartScreen />} />
               <Route path="/product/:slug" element={<ProductScreen />} />
-              <Route path="/signup" element={<SignupScreen />} />
               <Route path="/shipping" element={<ShippingAddressScreen />}></Route>
               <Route path="/payment" element={<PaymentMethodScreen />}></Route>
               <Route path="/" element={<HomeScreen />} />

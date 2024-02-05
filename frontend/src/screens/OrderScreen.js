@@ -109,7 +109,7 @@ export default function OrderScreen() {
                         <Card.Body>
                             <Card.Title>Items</Card.Title>
                             <ListGroup variant="flush">
-                                {order?.orderItems?.map((item) => (
+                                {order.orderItems.map((item) => (
                                     <ListGroup.Item key={item._id}>
                                         <Row className="align-items-center">
                                             <Col md={6}>
@@ -117,7 +117,7 @@ export default function OrderScreen() {
                                                     src={item.image}
                                                     alt={item.name}
                                                     className="img-fluid rounded img-thumbnail"
-                                                />{" "}
+                                                ></img>{' '}
                                                 <Link to={`/product/${item.slug}`}>{item.name}</Link>
                                             </Col>
                                             <Col md={3}>
@@ -139,7 +139,8 @@ export default function OrderScreen() {
                                 <ListGroup.Item>
                                     <Row>
                                         <Col>Items</Col>
-                                        <Col>${Number(order.itemsPrice).toFixed(2)}</Col>                                    </Row>
+                                        <Col>${order.itemsPrice.toFixed(2)}</Col>
+                                    </Row>
                                 </ListGroup.Item>
                                 <ListGroup.Item>
                                     <Row>
