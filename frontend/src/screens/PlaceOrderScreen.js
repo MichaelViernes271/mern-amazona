@@ -48,7 +48,6 @@ export default function PlaceOrderScreen() {
     const placeOrderHandler = async () => {
         try {
             dispatch({ type: 'CREATE_REQUEST' });
-
             const { data } = await Axios.post(
                 '/api/orders',
                 {
