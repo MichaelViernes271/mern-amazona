@@ -172,12 +172,18 @@
     2. add search box
 
 35. Create Search Screen
+
     1. show filters
     2. create api for searching products
     3. display results
 
-<!-- TEST ACCOUNT FOR PAYPAL: sb-zlrsx29507478@business.example.com -->
-<!-- PASSWORD: 5Ajs}=6$ -->
+36. Create Admin Menu
+    1. define protected route component
+    2. define admin route component
+    3. add menu for admin in header
+
+<!-- TEST ACCOUNT FOR PAYPAL: sb-ys1ud29507479@personal.example.com -->
+<!-- PASSWORD: Yx%5z$,- -->
 
 <!-- IMPLEMENTATION OF STRIPE PAYMENT METHOD IS HERE:
 https://github.com/basir/mern-amazona/commit/265da559c7de23d2c946cda3153b64cb4b6f7ab3 -->
