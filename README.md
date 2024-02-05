@@ -140,6 +140,7 @@
     3. show order information in 2 cloumns
 
 30. Pay Order By PayPal
+
     1. generate paypal client id
     2. create api to return client id
     3. install react-paypal-js
@@ -150,7 +151,15 @@
     8. implement onApprove payment function
     9. create pay order api in backend
 
+31. Display Order History
+    1. create order screen
+    2. create order history api
+    3. use api in the frontend
+
 <!-- TEST ACCOUNT FOR PAYPAL: sb-zlrsx29507478@business.example.com -->
 <!-- PASSWORD: 5Ajs}=6$ -->
+
+<!-- IMPLEMENTATION OF STRIPE PAYMENT METHOD IS HERE:
+https://github.com/basir/mern-amazona/commit/265da559c7de23d2c946cda3153b64cb4b6f7ab3 -->
 
 <!-- PROJECT WEBSITE = https://amazona.onrender.com/ -->
