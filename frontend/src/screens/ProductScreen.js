@@ -98,7 +98,7 @@ function ProductScreen() {
         <div>
             <Row>
                 <Col md={6}>
-                    <img src={`http://localhost:3000/${product.image}` || product.image}
+                    <img src={product.image}
                         alt={product.name}
                         className="img-large" />
                 </Col>
